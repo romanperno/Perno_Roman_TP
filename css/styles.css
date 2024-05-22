@@ -1,0 +1,21 @@
+/*----------------------------------------------------------------------------
+    Reset
+----------------------------------------------------------------------------*/
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    scroll-behavior: smooth;
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+
+
+/*font 
+
+/*font-family: "Oswald", sans-serif;
+/*
