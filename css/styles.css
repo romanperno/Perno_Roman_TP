@@ -109,60 +109,58 @@ h2{
 
 /*==========Produits==========*/
 .produits {
-    padding: 60px 0;
+  margin: 100px 0;     
 }
-
 .produits ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-    margin-bottom: 40px;
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+  margin-top: 30px;
+  margin-bottom: 0;
+  padding: 0;
+  gap: 15px;
 }
-
-.produits li {
-    margin: 0 20px;
-}
-
 .produits li a {
-    color: #333333;
-    text-decoration: none;
-    font-size: 1.8rem;
-    font-weight: bold;
+  color: black;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: 'Oswald', sans-serif;
 }
-
-/* Typographies 
-h1, h2, h3, h4 {
+h3{
   font-family: 'Freeman', sans-serif;
-  color: #333333;
-}
-
-h1 {
+  font-weight: 400;
+  color: black;
   font-size: 3.6rem;
-  margin-bottom: 2rem;
+  margin: 0;
+}
+h4{
+  font-family: 'Freeman', sans-serif;
+  font-weight: 400;
+  color: black;
+  font-size: 2.2rem;
+  margin: 0;
+}
+.planches, .souliers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 0;
+}
+.planches img,
+.souliers img {
+  width: 290px;
+  height: 290px;
+  object-fit: cover;
+  background-color: white;
 }
 
-h2 {
-  font-size: 2.8rem;
-  margin-bottom: 1.5rem;
+/*==========Equipe==========*/
+.equipe p{
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
 }
-
-h3 {
-  font-size: 2.4rem;
-  margin-bottom: 1rem;
-}
-
-h4 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-p {
-  font-size: 1.6rem;
-  line-height: 1.5;
-  margin-bottom: 1rem;
-}*/
 
 /*
 
@@ -170,33 +168,7 @@ p {
 
 
 
-.planches,
-.souliers {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 40px;
-}
 
-.planches ul,
-.souliers ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.planches li,
-.souliers li {
-  margin: 10px;
-}
-
-.planches img,
-.souliers img {
-  max-width: 100%;
-  height: auto;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-}
 
 .equipe {
   background-color: #F2F2F2;
@@ -276,4 +248,124 @@ footer nav li a {
   text-decoration: none;
   font-size: 1.6rem;
 }*/
+
+
+
+
+/* Typographies 
+h1, h2, h3, h4 {
+  font-family: 'Freeman', sans-serif;
+  color: #333333;
+}
+
+h1 {
+  font-size: 3.6rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}*/
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
