@@ -7,8 +7,6 @@
 
     <link rel="stylesheet" href="css/normalize.css">
 
-    
-    
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,11 +14,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Freeman&family=Oswald:wght@200..700&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="css/styles.css">
+    
+    <script src="js/script.js" defer></script>
 </head>
 <body>
 
 <!--Header-->    
-    <header>
+    <header id="haut">
         <div class="wrapper">
             <a href="index.html" class="logo">
                 <img src="images/logo.png" alt="">
@@ -29,16 +29,16 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="">Accueil</a>
+                        <a href="index.html">Accueil</a>
                     </li>
                     <li>
-                        <a href="">Magasiner</a>
+                        <a href="#produits">Magasiner</a>
                     </li>
                     <li>
-                        <a href="">Équipe</a>
+                        <a href="#equipe">Équipe</a>
                     </li>
                     <li>
-                        <a href="">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -57,7 +57,7 @@
         </div>
     </section>
 <!--Section Produits-->
-    <section class="produits">
+    <section id="produits" class="produits">
         <div class="wrapper">
             <h3>PRODUITS RECOMMANDÉS</h3>
             <ul>
@@ -74,26 +74,25 @@
                     <a href="">Souliers</a>
                 </li>
             </ul>
-
             <article class="planches">
                 <ul>
-                    <li>
-                        <a href="">
+                    <li data-prix="99,99 $" data-description="Planche de skate de la marque Quasi 8.38po">
+                        <a href="fiche-produit.html">
                             <img src="images/planche1.png" alt="">
                         </a>
                     </li>
-                    <li>
-                        <a href="">
+                    <li data-prix="79,89 $" data-description="Planche de skate de la marque Alltimers 8po">
+                        <a href="fiche-produit.html">
                             <img src="images/planche2.png" alt="">
                         </a>
                     </li>
-                    <li>
-                        <a href="">
+                    <li data-prix="105,98 $" data-description="Planche de skate de la marque Quasi 8.25po">
+                        <a href="fiche-produit.html">
                             <img src="images/planche3.png" alt="">
                         </a>
                     </li>
-                    <li>
-                        <a href="">
+                    <li data-prix="129,99 $" data-description="Planche de skate de la marque Palace 8.27po">
+                        <a href="fiche-produit.html">
                             <img src="images/planche4.png" alt="">
                         </a>
                     </li>
@@ -102,33 +101,34 @@
            <h4>Planches</h4>
             <article class="souliers">
                 <ul>
-                    <li>
-                        <a href="">
+                    <li data-prix="19,99 $" data-description="Description courte du produit">
+                        <a href="fiche-produit.html">
                             <img src="images/souliers1.png" alt="">
                         </a>
                     </li>
-                    <li>
-                        <a href="">
+                    <li data-prix="19,99 $" data-description="Description courte du produit">
+                        <a href="fiche-produit.html">
                             <img src="images/souliers2.png" alt="">
                         </a>
                     </li>
-                    <li>
-                        <a href="">
+                    <li data-prix="19,99 $" data-description="Description courte du produit">
+                        <a href="fiche-produit.html">
                             <img src="images/souliers3.png" alt="">
                         </a>
                     </li>
-                    <li>
-                        <a href="">
+                    <li data-prix="19,99 $" data-description="Description courte du produit">
+                        <a href="fiche-produit.html">
                             <img src="images/souliers4.png" alt="">
                         </a>
                     </li>
                 </ul>
             </article>
             <h4>Souliers</h4>
+            <a href="produits.html"><button class="voirProduits">Voir tout les produits</button></a>
         </div>
     </section>
 <!--Section Equipe-->
-    <section class="equipe">
+    <section id="equipe" class="equipe">
         <div class="wrapper">
             <h3>NOTRE ÉQUIPE</h3>
             <p class="soustitre">Découvrez les visages passionnés qui donnent vie à notre projet. Rencontrez notre équipe diversifiée et talentueuse, unie dans sa mission de fournir des solutions exceptionnelles.</p>
@@ -152,40 +152,53 @@
         </div>
     </section>
 <!--Section Contact-->
-    <section class="contact">
-        <h3>POUR NOUS CONTACTER</h3>
-        <p>1600 Pennsylvania Ave NW, 
-            Washington, DC 20500, 
-            United States of America. 
-            Tel: (202) 456-1111</p>
+    <section id="contact" class="contact">
+        <div class="wrapper">
+            <h3>POUR NOUS CONTACTER</h3>
+            <p>
+                <br>1600 Pennsylvania Ave NW, 
+                <br>Washington, DC 20500, 
+                <br>United States of America. 
+                <br>Tel: (202) 456-1111
+            </p>
             <button>ENVOYER UN COURRIEL</button>
+        </div>
             <img src="images/map.png" alt="">
+        
     </section>
 <!--Footer-->
     <footer>
-        <nav>
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/" target="_blank">Twitter</a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/" target="_blank">Youtube</a>
-                </li>
-                <li>
-                    <a href="https://www.google.ca/" target="_blank">Google+</a>
-                </li>
-                <li>
-                    <a href="https://ca.linkedin.com/" target="_blank">LinkedIn</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+                    </li>
+                    <li>
+                        <a href="https://www.google.ca/" target="_blank">Google+</a>
+                    </li>
+                    <li>
+                        <a href="https://ca.linkedin.com/" target="_blank">LinkedIn</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <a href="#haut" class="haut"><span class="material-symbols-outlined">
+                arrow_upward
+                </span></a>
+        </div>
         <p>© 2021 TIM. Tous droits réservés.</p>
-        <span class="material-symbols-outlined">
-            arrow_upward
-            </span>
     </footer>
+<!--Fenetre modale-->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img id="modal-img" class="modal-content" src="" alt="">
+    </div>
 </body>
 </html>
