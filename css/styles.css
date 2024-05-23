@@ -1,21 +1,279 @@
-/*----------------------------------------------------------------------------
-    Reset
-----------------------------------------------------------------------------*/
-
+/*================= Reset et base styles =================*/
 html{
-    box-sizing: border-box;
-    font-size: 62.5%;
-
-    scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+*,
+*:before, *:after{
+  box-sizing: inherit;
+}
+body{
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  background-image: url(..//images/Fond.png);
+  background-size: 25%;
+  background-attachment: fixed;
+}
+a{
+    text-decoration: none;
+}
+.wrapper{
+  width: 1200px;
+  margin: 0 auto;
 }
 
-*,*:before,*:after{
-    box-sizing: inherit;
+/*==========Header==========*/
+header {
+  padding: 20px 0;
+  background-color: #F56700;
+}
+header .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+nav li a{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    color: black;
+    font-size: 1.8rem;
+}
+nav li a:hover{
+    color: #FF8C38;
 }
 
+/*==========Hero==========*/
+.hero{
+    background-image: url(../images/hero.png);
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: white;
+    font-size: 3.2rem;
+    font-family: 'Freeman', sans-serif;
+    margin: 0;
+    text-align: center;
+    width: 900px;
+}
+.hero .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
 
+/*==========Joindre=========*/
+.joindre {
+    background-color: #F56700;
+    color: #FFFFFF;
+    height: 125px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.joindre .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.joindre button {
+    background-color: #FF8C38;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 600;
+    border-radius: 10px;
+    margin: 0;
+}
+h2{
+    font-size: 3rem;
+    font-weight: 500;
+    color: black;
+    margin: 0;
+}
 
-/*font 
+/*==========Produits==========*/
+.produits {
+    padding: 60px 0;
+}
 
-/*font-family: "Oswald", sans-serif;
+.produits ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.produits li {
+    margin: 0 20px;
+}
+
+.produits li a {
+    color: #333333;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Typographies 
+h1, h2, h3, h4 {
+  font-family: 'Freeman', sans-serif;
+  color: #333333;
+}
+
+h1 {
+  font-size: 3.6rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}*/
+
 /*
+
+
+
+
+
+.planches,
+.souliers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.planches ul,
+.souliers ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.planches li,
+.souliers li {
+  margin: 10px;
+}
+
+.planches img,
+.souliers img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.equipe {
+  background-color: #F2F2F2;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.listeequipe {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.listeequipe li {
+  margin: 0 20px;
+}
+
+.listeequipe .photo {
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.contact {
+  padding: 60px 0;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #333333;
+}
+
+.contact h3 {
+  color: #FF6347;
+}
+
+.contact button {
+  background-color: #FF6347;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.contact img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: #333333;
+  color: #FFFFFF;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+footer nav li {
+  margin: 0 10px;
+}
+
+footer nav li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1.6rem;
+}*/
+
